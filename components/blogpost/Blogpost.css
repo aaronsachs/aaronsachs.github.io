@@ -1,0 +1,15 @@
+.blogpost {
+	font-family: monospace; 
+	border: solid black 0.1em;
+	background-color: #b8e6ff; 
+	border-radius: 1em
+}
+
+.date {
+	color: grey;
+}
+
+.body {
+	font-size: 1.8em; 
+	line-height: 1.5em;
+}

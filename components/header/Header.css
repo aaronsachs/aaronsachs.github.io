@@ -1,0 +1,8 @@
+.header {
+	font-family: monospace;
+	grid-column: 1/-1; /* The header spans columns [1, end) in its containing grid */
+	background-color: #3279a8; 
+	color: white;
+	border: solid black 0.1em;
+
+}
