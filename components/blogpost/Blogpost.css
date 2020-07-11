@@ -2,7 +2,13 @@
 	font-family: monospace; 
 	border: solid black 0.1em;
 	background-color: #b8e6ff; 
-	border-radius: 1em
+	border-radius: 1em; 
+	box-shadow: 0.4em 0.4em lightgrey;
+}
+
+.blogpost:hover {
+	background-color: lightgreen; 
+	color: green;
 }
 
 .date {

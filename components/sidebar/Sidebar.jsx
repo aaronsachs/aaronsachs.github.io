@@ -16,7 +16,7 @@ class Sidebar extends React.Component {
 					this.props.categories.map(
 						({name, link}, idx) => {
 							return (
-								<Link to={link} key={idx}>
+								<Link to={link} style={{textDecoration: 'none'}} key={idx}>
 									<div className="category">{name}</div>
 								</Link>
 							)

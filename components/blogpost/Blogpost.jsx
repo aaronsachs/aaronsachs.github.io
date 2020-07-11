@@ -1,5 +1,6 @@
 import React from 'react';
 import './Blogpost.css';
+import Blogtags from '../blogtags/Blogtags.jsx';
 
 class Blogpost extends React.Component {
 	constructor(props) {
@@ -29,10 +30,15 @@ class Blogpost extends React.Component {
 	}
 
 	render() {
+		let date = this.props.date;
+		let month = date.toLocaleString("default", {month: "long"});
+		let day = date.getDate();
+		let year = date.getFullYear();
 		return (
 			<div className="blogpost" onClick={this.handlePostClick}>
 				<h1 className="title">{this.props.title}</h1>
-				<h2 className="date">{this.props.date}</h2>
+				<h2 className="date">{`${month} ${day}, ${year}`}</h2>
+				<Blogtags tags={this.props.tags}/>
 				<p className="body">
 				    {this.state.bodyPreview}
 				    <span>{this.state.expandButtonText}</span>

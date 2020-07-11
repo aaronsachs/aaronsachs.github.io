@@ -1,0 +1,11 @@
+.noPostsView {
+	font-family: monospace;
+	text-align: center;
+	font-size: 1.5em
+}
+
+.noPostsCow {
+	max-width: 100%; 
+	height: auto;
+	width: auto;
+}
