@@ -1,13 +1,20 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue';
+
 
 const mainTheme = createMuiTheme({
 	palette: {
 		primary: {
-			main: "#3279a8"
+			main: blue[200]
 		}, 
 		secondary: {
-			main: "#b8e6ff"
+			main: blue["A200"]
 		}
+	}, 
+	typography: {
+		fontFamily: [
+		  "monospace"
+		].join(',')
 	}
 })
 

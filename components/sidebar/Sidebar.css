@@ -1,17 +1,14 @@
 .sidebar {
-	font-family: monospace;
 	grid-column: 1;
 	grid-row: 2/100;
-	background-color: #3279a8;
-	color: white;
-	border: solid black 0.1em;
 	word-wrap: break-word;
-	box-shadow: 0.4em 0.4em lightgrey;
 }
 
 .category {
-	font-size: 2em;
-	color: white;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .category:hover {

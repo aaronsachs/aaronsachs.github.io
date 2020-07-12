@@ -1,29 +1,16 @@
-.blogpost {
-	font-family: monospace; 
-	border: solid black 0.1em;
-	background-color: #b8e6ff; 
-	border-radius: 1em; 
-	box-shadow: 0.4em 0.4em lightgrey;
-}
-
-.blogpost:hover {
-	background-color: lightgreen; 
-	color: green;
-}
-
 .blogpostInfoBar {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.date {
-	color: grey;
-	margin: 0em;
+.title {
+	margin-top: 0.5em; 
+	margin-bottom: 0.5em
 }
 
 .body {
-	font-size: 1.8em; 
+	font-size: 1.3em; 
 	line-height: 1.5em;
 }
 

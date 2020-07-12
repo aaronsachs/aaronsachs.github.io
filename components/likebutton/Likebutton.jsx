@@ -6,11 +6,12 @@ import { Chip, Avatar} from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
+
 class Likebutton extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			numLikes: 0
+			numLikes: props.likes
 		}
 		this.handleClickLike = this.handleClickLike.bind(this);
 	}
@@ -25,6 +26,7 @@ class Likebutton extends React.Component {
 
 	render() {
 		return (
+			
 			<div className="likeButton">
 				<ThemeProvider theme={likeButtonTheme}>
 				    <Chip

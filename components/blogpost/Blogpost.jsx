@@ -2,6 +2,8 @@ import React from 'react';
 import './Blogpost.css';
 import Blogtags from '../blogtags/Blogtags.jsx';
 import Likebutton from '../likebutton/Likebutton.jsx';
+import { Box, Typography } from '@material-ui/core';
+
 
 class Blogpost extends React.Component {
 	constructor(props) {
@@ -36,20 +38,28 @@ class Blogpost extends React.Component {
 		let day = date.getDate();
 		let year = date.getFullYear();
 		return (
-			<div className="blogpost">
-				<h1 className="title">{this.props.title}</h1>
-				
-				<div className="blogpostInfoBar">
-				    <h2 className="date">{`${month} ${day}, ${year}`}</h2>
-				    <Likebutton/>
-				</div>
-				
-				<Blogtags tags={this.props.tags}/>
-				<p className="body" onClick={this.handlePostClick}>
-				    {this.state.bodyPreview}
-				    <span>{this.state.expandButtonText}</span>
-				</p>
-			</div>
+			<Box bgcolor="secondary.main" boxShadow={4} borderRadius="borderRadius">
+				<Box boxShadow={10} className="blogpost" bgcolor="primary.main" borderRadius="borderRadius">
+					<Typography variant="h4">
+						<div className="title">{this.props.title}</div>
+					</Typography>
+					
+					<div className="blogpostInfoBar">
+					    <Typography variant="h6">
+					    	<div className="date">{`${month} ${day}, ${year}`}</div>
+					    </Typography>
+					    <Likebutton likes={this.props.likes}/>
+					</div>
+					
+					<Blogtags tags={this.props.tags}/>
+					<Typography variant="body1" component="div">
+						<p className="body" onClick={this.handlePostClick}>
+						    {this.state.bodyPreview}
+						    <span>{this.state.expandButtonText}</span>
+						</p>
+					</Typography>
+				</Box>
+			</Box>
 		)
 	}
 }
