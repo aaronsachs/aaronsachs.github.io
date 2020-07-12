@@ -22,10 +22,6 @@ class Homepage extends React.Component {
 		this.postsFilter = this.postsFilter.bind(this);
 	}
     
-    // Filter posts by post-wise criteria specified in filterFunc, 
-    // and then convert the filtered posts lists into a list of
-    // <Blogpost> components.
-    //
 	postsFilter(postItems, filterFunc) {
 		let filteredPosts = postItems.filter(filterFunc).map(
 			(post) => <Blogpost key={post.id} {...post} />
