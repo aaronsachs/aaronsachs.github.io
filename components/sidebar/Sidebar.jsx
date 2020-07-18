@@ -19,11 +19,11 @@ class Sidebar extends React.Component {
 						({name, link}, idx) => {
 							return (
 								<Link to={link} style={{textDecoration: 'none', color: 'inherit'}} key={idx}>
-								    <Box boxShadow={4} bgcolor="primary.main">
-								    <Typography variant="h5">
-								        <div className="category">{name}</div>
-								    </Typography>
-									 </Box>
+									<Box boxShadow={4} bgcolor="primary.main">
+										<Typography variant="h5">
+											<div className="category">{name}</div>
+										</Typography>
+									</Box>
 								</Link>
 							)
 						}
