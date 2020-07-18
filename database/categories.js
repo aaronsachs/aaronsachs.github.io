@@ -1,24 +1,24 @@
 let categories = [
 	{
 		name: "About Me", 
-		link: "about"
+		link: "/about"
 	}, 
 	{
 		name: "Recent", 
-		link: "recent"
+		link: "/recent"
 	}, 
 	{
 		name: "Life", 
-		link: "life"
+		link: "/life"
 	}, 
 	{
 		name: "Hobbies", 
-		link: "hobbies"
+		link: "/hobbies"
 	}, 
 	{
 		name: "Technology", 
-		link: "technology"
-	}, 
+		link: "/technology"
+	}
 ];
 
 export default categories;

@@ -11,12 +11,8 @@ class Header extends React.Component {
 
 	render() {
 		return (
-			<Box boxShadow={4} className="header" bgcolor="secondary.main" borderRadius="borderRadius">
-			    <Box boxShadow={4} bgcolor="primary.main">
-			      <Typography variant="h3">
-				      Welcome to Aaron's Website!
-				  </Typography>
-				</Box>
+			<Box className="header" boxShadow={4} bgcolor="secondary.main">
+				<Typography variant="h3">Welcome to Aaron's Website!</Typography>
 			</Box>
 		)
 	}

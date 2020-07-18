@@ -14,7 +14,15 @@ const mainTheme = createMuiTheme({
 	typography: {
 		fontFamily: [
 		  "monospace"
-		].join(',')
+		].join(','), 
+		body1: {
+			fontSize: "1.8rem", 
+			lineHeight: "3rem"
+		}, 
+		body2: {
+			fontSize: "1.5rem", 
+			lineHeight: "2.5rem"
+		}
 	}
 })
 

@@ -12,15 +12,15 @@ class Blogtags extends React.Component {
 
 	render() {
 		return (
-			<div className="blogTagsArray">
+			<div>
 				{this.props.tags.map(
 					(tag) => 
-					    <Chip 
-					      key={tag} 
-					      variant="outlined" 
-					      avatar ={<Avatar alt="icon" src="images/cow.png"/>}
-					      label={tag}
-					    />
+						<Chip 
+							key={tag} 
+							variant="outlined" 
+							avatar ={<Avatar alt="icon" src="images/cow.png"/>}
+							label={tag}
+						/>
 				)}
 			</div>
 		)

@@ -9,7 +9,12 @@ class About extends React.Component {
 	}
 
 	render() {
-		return <p className="about">Under construction</p>
+		return (
+			<div className="about">
+				<p>Please excuse our appearance while the About Me page is under construction</p>
+				<img className="aboutCow" src="images/cow.png" alt="cow"/>
+			</div>
+		)
 	}
 }
 

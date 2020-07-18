@@ -1,16 +1,5 @@
-.blogpostInfoBar {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.blogpost {
+	padding: 0.5em 3em 0.5em 0.5em;
+	grid-column: 2; 
+	margin-right: 1.5em;
 }
-
-.title {
-	margin-top: 0.5em; 
-	margin-bottom: 0.5em
-}
-
-.body {
-	font-size: 1.3em; 
-	line-height: 1.5em;
-}
-
