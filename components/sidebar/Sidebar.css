@@ -14,3 +14,10 @@
 .category:hover {
 	color: #b8e6ff;
 }
+
+@media only screen and (max-width: 960px) {
+	.sidebarFull {
+		visibility: hidden;
+		position: fixed;
+	}
+}

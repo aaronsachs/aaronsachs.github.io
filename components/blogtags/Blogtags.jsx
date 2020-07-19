@@ -1,6 +1,6 @@
 import React from 'react';
 import './Blogtags.css';
-import { Chip, Avatar } from '@material-ui/core';
+import { Chip, Avatar, Hidden } from '@material-ui/core';
 
 
 class Blogtags extends React.Component {
@@ -15,12 +15,13 @@ class Blogtags extends React.Component {
 			<div>
 				{this.props.tags.map(
 					(tag) => 
-						<Chip 
-							key={tag} 
-							variant="outlined" 
-							avatar ={<Avatar alt="icon" src="images/cow.png"/>}
-							label={tag}
-						/>
+						<Hidden smDown key={tag}>
+							<Chip  
+								variant="outlined" 
+								avatar ={<Avatar alt="icon" src="images/cow.png"/>}
+								label={tag}
+							/>
+						</Hidden>
 				)}
 			</div>
 		)

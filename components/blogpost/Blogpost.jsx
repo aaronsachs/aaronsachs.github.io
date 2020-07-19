@@ -15,11 +15,11 @@ class Blogpost extends React.Component {
 	render() {
 		return (
 			<Box className="blogpost" boxShadow={10} bgcolor="primary.main" borderRadius="borderRadius">
-				<Typography variant="h4">
+				<Typography variant="h3">
 					<div className="title">{this.props.title}</div>
 				</Typography>
 
-				<Blogpostinfobar variant="h5" date={this.props.date} likes={this.props.likes}/>
+				<Blogpostinfobar variant="h4" date={this.props.date} likes={this.props.likes}/>
 				<Blogtags tags={this.props.tags}/>
 
 				<Typography variant="body2" component="div">

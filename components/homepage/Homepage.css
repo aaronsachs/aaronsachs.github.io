@@ -3,3 +3,19 @@
 	grid-template-columns: 1fr 4fr;
 	grid-gap: 1.5em;
 }
+
+@media only screen and (max-width: 960px) {
+	.homepage {
+		grid-template-columns: 1fr 12fr; 
+		column-gap: 0.2em;
+		grid-row-gap: 0.6em
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.homepage {
+		grid-template-columns: 1fr 16fr; 
+		column-gap: 0.2em;
+		grid-row-gap: 0.6em
+	}
+}

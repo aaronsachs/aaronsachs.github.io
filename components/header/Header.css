@@ -2,4 +2,7 @@
 	grid-column: 1/-1; /* The header spans columns [1, end) in its containing grid */
 	padding-top: 1em;
 	padding-bottom: 1em;
+	position: sticky; 
+	top: 0;
+	z-index: 1; 
 }
