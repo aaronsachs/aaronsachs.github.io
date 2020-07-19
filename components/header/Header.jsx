@@ -12,7 +12,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<Box className="header" boxShadow={4} bgcolor="secondary.main">
-				<Typography variant="h3">Welcome to Aaron's Website!</Typography>
+				<Typography variant="h1">Welcome to Aaron's Website!</Typography>
 			</Box>
 		)
 	}

@@ -1,0 +1,12 @@
+.expandButton {
+	text-align: center; 
+	visibility: hidden; 
+	position: fixed;
+}
+
+@media only screen and (max-width: 960px) {
+	.expandButton {
+		visibility: visible;
+		position: static; 
+	}
+}
